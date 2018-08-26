@@ -1,3 +1,5 @@
+# Variables and Constants
+
 ## Variables
 Variables are places to store values. They can be declared with the following syntax:
 

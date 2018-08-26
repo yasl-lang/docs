@@ -1,4 +1,6 @@
-YASL [[Operators|Operators]] have the following precedence (from tightest bound to loosest):
+# Operator Precedence Table
+
+YASL [Operators](/docs/expressions/operators) have the following precedence (from tightest bound to loosest):
 
 | Precedence | Operators | Description | Associativity |
 |------------|-----------|-------------|---------------|

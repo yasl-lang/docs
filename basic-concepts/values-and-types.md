@@ -1,4 +1,5 @@
 # Values and Types
+
 YASL is a _dynamically typed_ langauge. This means that variables don't carry any type information; only values do. YASL has the following 7 basic types:
 * _undef_
 * _bool_
