@@ -1,0 +1,79 @@
+YASL reserves the following keywords, which may not be used as identifiers:
+
+* break
+* const
+* continue
+* else
+* elseif
+* enum
+* false
+* fn
+* for
+* if
+* in
+* inf
+* let
+* nan
+* print
+* return
+* true
+* undef
+* while
+
+# break 
+`break` exits from a `while` or `for` loop, skipping all remaining iterations.
+
+# const
+`const` is used in variable declarations to make it impossible to reassign a variable. Note that the variable is still mutable if it is a mutable type.
+
+# continue
+`continue` skips the current iteration of a `while` or `for` loop, resuming at the next iteration.
+
+# else
+`else` is used in `if` statements to denote a block that is executed if the condition is false.
+
+# elseif
+`elseif` is used in `if` statements to denote a block that is executed if the previous condition if false, and the current condition is true.
+
+# enum
+Currently unused, but reserved for future use.
+
+# false
+Literal boolean `false`.
+
+# fn
+`fn` is used to declare functions.
+
+# for
+`for` is used to start a `for` loop, or in list and table comprehensions to introduce the iteration variable(s).
+
+# if
+`if` is used in `if` statements, or in list and table comprehensions to introduce a condition to filter the list with.
+
+# in
+`in` is used in `for` loops and comprehensions to separate the iteration variable from the list/table being iterated over.
+
+# inf
+Literal infinity.
+
+# let
+`let` is used in variable declarations.
+
+# nan
+Literal NaN.
+
+# print
+`print` is used in `print` statements.
+
+# return
+`return` is used in function declarations to return a value.
+
+# true
+Literal boolean `true`.
+
+# undef
+Literal `undef`.
+
+# while
+`while` is used to introduce `while` loops.
+
