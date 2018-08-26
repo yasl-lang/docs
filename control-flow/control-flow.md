@@ -5,7 +5,7 @@ If statements take the following form:
 
 `"if" expr "{" { stmt } "}" { "elseif" expr "{" { stmt } "}" } [ "else" "{" { stmt } "}" ]`
 
-The condition can be any valid expression. Whether the if statement is executed depends on the [[Truthiness|Truthiness]] of the expression.
+The condition can be any valid expression. Whether the if statement is executed depends on the [Truthiness](/docs/control-flow/truthiness) of the expression.
 
 ## While Loops
 While loops take the following form:
