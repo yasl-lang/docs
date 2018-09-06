@@ -6,7 +6,7 @@ YASL [Operators](/docs/expressions/operators) have the following precedence (fro
 |------------|-----------|-------------|---------------|
 | 1          | () <br> [] <br> .   | Function Calls <br> Indexing <br> Member Access | Left |
 | 2          | **        | Exponentiation | Right      |
-| 3          | + <br> - <br> # <br> ! <br> ^ | Unary Plus <br> Unary Minus <br> Length <br> Logical Negation <br> Bitwise Negation | Right |
+| 3          | + <br> - <br> @ <br> ! <br> ^ | Unary Plus <br> Unary Minus <br> Length <br> Logical Negation <br> Bitwise Negation | Right |
 | 4          | * <br> / <br> // <br> % | Multiplication <br> Float Division <br> Integer Division <br> Modulus | Left |
 | 5          | + <br> -  | Addition <br> Subtraction | Left |
 | 6          | << <br> >> | Bitshift Left <br> Bitshift Right | Left |
