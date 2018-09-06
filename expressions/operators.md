@@ -20,7 +20,7 @@ Float division always returns a _float64_. Integer division and modulo are only 
 ## Bitwise Operators
 YASL supports the following bitwise operators:
 
-* **|** bitwise or
+* **\|** bitwise or
 * **^** bitwise xor
 * **&** bitwise and
 * **<<** bitshift left
@@ -32,14 +32,14 @@ All bitwise operators are only defined for _int64_ operands, and return an _int6
 ## Logical Operators
 YASL supports the following logical operators:
 
-* **||** logical or
+* **\|\|** logical or
 * **&&** logical and
 * **!** logical negation
 
 All logical operators can be used with any value, treating all falsey values as false and all truthy values as true. Logical and and logical or short circuit, and return either the left or right operand depending on [[truthiness|Truthiness]].
 
 ## Length Operator
-The length operator **#** is defined for _str_ (returning the length), _list_ (returning the length) and _table_ (returning the number of elements).
+The length operator **@** is defined for _str_ (returning the length), _list_ (returning the length) and _table_ (returning the number of elements).
 
 ## Concatenation Operator
 The concatenation operator **~** is defined for _str_ operands, returning the result of concatenating the two strings, and _list_ operands, returning the result of concatenating the two lists.
