@@ -10,7 +10,7 @@ YASL [Operators](/docs/expressions/operators) have the following precedence (fro
 | 4          | * <br> / <br> // <br> % | Multiplication <br> Float Division <br> Integer Division <br> Modulus | Left |
 | 5          | + <br> -  | Addition <br> Subtraction | Left |
 | 6          | \<\< <br> \>\> | Bitshift Left <br> Bitshift Right | Left |
-| 7          | &         | Bitwise And | Left          |
+| 7          | & <br> &^      | Bitwise And <br> Bitwise And-Not | Left          |
 | 8          | ^         | Bitwise Xor | Left          |
 | 9          | \|        | Bitwise Or  | Left          |
 | 10         | ~         | Concatenation | Right       |
