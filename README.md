@@ -1,6 +1,6 @@
 # YASL Documentation
 
-YASL is a small, dynamically typed scripting langauge.
+YASL is a small, dynamically typed scripting language.
 
 ## Contents
 
