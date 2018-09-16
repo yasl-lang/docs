@@ -19,6 +19,12 @@ This notation can be used for all functions listed below.
 | tofloat64  | self      | converts self to an float64 value, rounding to nearest float if necessary if necessary |
 | tostr      | self      | converts self to a str value |
 
+## Bool Functions
+
+| Name       | Arguments | Description |
+|------------|-----------|-------------|
+| tostr      | self      | converts self to a str value |
+
 ## Str Functions
 
 | Name       | Arguments | Description |
