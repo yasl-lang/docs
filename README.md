@@ -17,4 +17,4 @@ YASL is a small, dynamically typed scripting langauge.
   * [Truthiness](https://yasl-lang.github.io/docs/control-flow/truthiness)
   * [Control Flow](https://yasl-lang.github.io/docs/control-flow/control-flow)
 * Standard Library
-  * [Built-in Function](https://yasl-lang.github.io/docs/standard-library/builtin-functions)
+  * [Built-in Functions](https://yasl-lang.github.io/docs/standard-library/builtin-functions)
