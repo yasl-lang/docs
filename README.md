@@ -6,6 +6,7 @@ YASL is a small, dynamically typed scripting language.
 
 * [Keywords](https://yasl-lang.github.io/docs/keywords)
 * Basic Concepts
+  * [Comments](https://yasl-lang.github.io/docs/basic-concepts/comments)
   * [Values and Types](https://yasl-lang.github.io/docs/basic-concepts/values-and-types)
   * [Variables and Constants](https://yasl-lang.github.io/docs/basic-concepts/variables-and-constants)
 * Statements
