@@ -7,12 +7,33 @@ If statements take the following form:
 
 The condition can be any valid expression. Whether the if statement is executed depends on the [Truthiness](/docs/control-flow/truthiness) of the expression.
 
+example:
+```
+if x % 15 == 0 {
+    print 'FizzBuzz'
+} elseif x % 5 == 0 {
+    print 'Buzz'
+} elseif x % 3 == 0 {
+    print 'Fizz'
+} else {
+    print x
+}
+```
+
 ## While Loops
 While loops take the following form:
 
 `"while" expr "{" { stmt } "}"`
 
 As with if statements, the condition can be any valid expression. The condition is checked before every iteration of the while, and the loop continues executing as long as the condition is truthy. While loops can be exited from early using `break`, or the current iteration can be skipped using `continue`.
+
+example:
+```
+while n > 0 {
+    x *= n
+    n -= 1
+}
+```
 
 ## Numeric For Loops
 Numeric for loops take the following form:
@@ -21,9 +42,23 @@ Numeric for loops take the following form:
 
 The first expression (or `let` statement) is executed once before the loop begins. The second expr is the condition to determine when to end the loop. The final expression is evaluated after every iteration of the loop. Note that for loops introduce their own scope, which includes the expression evaluated before starting the loop.
 
+example:
+```
+for let i = 0; i < @ls; i += 1 {
+    print ls[i]
+}
+```
+
 ## Iterative For Loops
 Iterative for loops take the following form:
 
 `"for" ["let"] ID "<-" expr "{" { stmt } "}"`.
 
 The expression can be any valid expression, although it is a runtime error if it does not evaluate to a list or table. Like numeric for loops, iterative for loops introduce their own scope, so the iteration variable will not continue to exist after the loop, if it was declared at the start of the loop.
+
+example:
+```
+for let x <- ls {
+     print x
+}
+```
