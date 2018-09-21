@@ -1,6 +1,8 @@
 # YASL Documentation
 
-YASL is a small, dynamically typed scripting language.
+__YASL__ is a small, dynamically-tyed, embeddable scripting language with a familiar C-like syntax. It is standard C99. It is not 
+intended for writing large applications; rather, it should be embedded in a larger C program. Of course, a fully operational 
+interpreter for YASL is provided. See the following pages for documentation and code examples.
 
 ## Contents
 
