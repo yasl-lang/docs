@@ -23,6 +23,7 @@ YASL supports the following bitwise operators:
 * **\|** bitwise or
 * **^** bitwise xor
 * **&** bitwise and
+* **&^** bitwise and-not
 * **<<** bitshift left
 * **>>** bitshift right
 * **^** bitwise negation
