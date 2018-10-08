@@ -20,6 +20,6 @@ YASL [Operators](/docs/expressions/operators) have the following precedence (fro
 | 14         | \|\|      | Logical Or  | Right         |
 | 15         | ??        | Undef Coalescing Operator | Right |
 | 16         | ? : | Ternary Operator | Right |
-| 17         |  = <br> **= <br> *= <br> /= <br> //= <br> %= <br> += <br> -= <br> >>= <br> <<= <br> ~= <br> &= <br> &^= <br> ^= <br> \|= <br> &&= <br> \|\|= <br> ??=  | Assignment  | Right |
+| 17         |  = <br> **= <br> *= <br> /= <br> //= <br> %= <br> += <br> -= <br> \>\>= <br> \<\<= <br> ~= <br> &= <br> &^= <br> ^= <br> \|= <br> &&= <br> \|\|= <br> ??=  | Assignment  | Right |
 
 
