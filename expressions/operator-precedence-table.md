@@ -16,9 +16,10 @@ YASL [Operators](/docs/expressions/operators) have the following precedence (fro
 | 10         | ~         | Concatenation | Right       |
 | 11         | < <br> <= <br> > <br> >= | Comparison Operators | Left |
 | 12         | == <br> != <br> === <br> !== | Comparison Operators | Left |
-| 13         | &&        | Logical And | Left          |
-| 14         | \|\|      | Logical Or  | Left          |
-| 15         | ? : <br> ?? | Ternary Operator <br> Undef Coalescing Operator | Right |
-| 16         |  = <br> **= <br> *= <br> /= <br> //= <br> %= <br> += <br> -= <br> >>= <br> <<= <br> ~= <br> &= <br> &^= <br> ^= <br> \|= <br> &&= <br> \|\|= <br> ??=  | Assignment  | Right |
+| 13         | &&        | Logical And | Right         |
+| 14         | \|\|      | Logical Or  | Right         |
+| 15         | ??        | Undef Coalescing Operator | Right |
+| 16         | ? : | Ternary Operator | Right |
+| 17         |  = <br> **= <br> *= <br> /= <br> //= <br> %= <br> += <br> -= <br> >>= <br> <<= <br> ~= <br> &= <br> &^= <br> ^= <br> \|= <br> &&= <br> \|\|= <br> ??=  | Assignment  | Right |
 
 
