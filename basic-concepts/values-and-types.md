@@ -16,7 +16,7 @@ The _undef_ type has 1 value, **undef**, which is useful mainly because it is di
 The _bool_ type has 2 values, **true** and **false**, with the expected semantics of booleans.
 
 ## int64
-The _int64_ type represents signed, 64-bit, two's complement integers. _int64_ literals can be created for base-2 (prefix _0b_ or _0B_ ), base-8 (prefix _0c_ or _0C_ ), base-10 (no prefix), or base-16 (prefix _0x_ or _0X_ ). Note that _int64_ literals with leading 0's are interpreted as base-10, not base-8 as in some languages. 
+The _int64_ type represents signed, 64-bit, two's complement integers. _int64_ literals can be created for base-2 (prefix _0b_ or _0B_ ), base-10 (no prefix), or base-16 (prefix _0x_ or _0X_ ). Note that _int64_ literals with leading 0's are interpreted as base-10, not base-8 as in some languages. 
 
 ## float64
 The _float64_ type represents IEEE double precision floating point numbers. _float64_ literals must have at least 1 digit both before and after the decimal point, unlike some other languages.
