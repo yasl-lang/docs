@@ -10,13 +10,13 @@ The condition can be any valid expression. Whether the if statement is executed 
 example:
 ```
 if x % 15 == 0 {
-    print 'FizzBuzz'
+    echo 'FizzBuzz'
 } elseif x % 5 == 0 {
-    print 'Buzz'
+    echo 'Buzz'
 } elseif x % 3 == 0 {
-    print 'Fizz'
+    echo 'Fizz'
 } else {
-    print x
+    echo x
 }
 ```
 
@@ -45,7 +45,7 @@ The first expression (or `let` statement) is executed once before the loop begin
 example:
 ```
 for let i = 0; i < @ls; i += 1 {
-    print ls[i]
+    echo ls[i]
 }
 ```
 
@@ -59,6 +59,6 @@ The expression can be any valid expression, although it is a runtime error if it
 example:
 ```
 for let x <- ls {
-     print x
+     echo x
 }
 ```
