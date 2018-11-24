@@ -9,8 +9,10 @@ where `ID` is any valid identifier (`[A-Za-z_$][A-Za-z0-9_$]*` i.e. alphanumeric
 
 examples:
 ```
-let x = 64  # declare new variable x, set its value to 64
-let y  # declare new variable y; its value is implicitly set to undef
+# declare new variable x, set its value to 64
+let x = 64  
+# declare new variable y, set its value to undef
+let y
 ```
 
 ## Constants
@@ -22,6 +24,9 @@ Note that constants must be initialized, unlike variables.
 
 examples:
 ```
-const pi = 3.14159  # declare new constant pi, set its value to 3.14159. trying to reassign pi is an error
-const tau  # error, because tau was not initialised
+# declare new constant pi, set its value to 3.14159. 
+# trying to reassign pi is an error
+const pi = 3.14159  
+# error, because tau was not initialised
+const tau
 ```
