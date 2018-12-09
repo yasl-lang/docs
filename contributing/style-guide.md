@@ -29,3 +29,6 @@ For example:
 
 ## typedefs
 Do not add any new typedefs. You may use any existing typedefs if needed.
+
+## naming
+Struct names should be in upper camel case (e.g. `RefCount`). Variable names should be lower case with no separator or lower snake case (e.g. `refcount` or `ref_count`). Try to match the style used in the particular file. Functions should be lower snake case (e.g. `vm_pop`). There are also other conventions for naming functions; e.g. all functions that operate on the VM start with `vm_`. This last convention must _absolutely_ be followed.
