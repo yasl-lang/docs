@@ -20,3 +20,12 @@ For example, the following is the includes from `list_methods.c`:
 #include "YASL_Object.h"
 #include "yasl_state.h"
 ```
+
+## integral and floating point values in YASL
+Whenever a floating point or integral type is used that represents a int or float within the YASL language, `yasl_float` or `yasl_int` should be used to represent it.
+
+For example:
+`yasl_int val = YASL_GETINT(obj)`, rather than `int64_t val = YASL_GETINT(obj)`.
+
+## typedefs
+Do not add any new typedefs. You may use any existing typedefs if needed.
