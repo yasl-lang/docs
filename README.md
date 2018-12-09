@@ -19,3 +19,5 @@ __YASL__ is a small, dynamically-typed, embeddable scripting language with a fam
   * [Control Flow](https://yasl-lang.github.io/docs/control-flow/control-flow)
 * Standard Library
   * [Built-in Functions](https://yasl-lang.github.io/docs/standard-library/builtin-functions)
+* Contributing
+  * [Style Guide](https://yasl-lang.github.io/docs/contributing/style-guide)
