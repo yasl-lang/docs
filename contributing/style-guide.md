@@ -1,6 +1,6 @@
 # Style Guide for contributing to YASL
 
-## `#include` order
+## `#include` Order
 In a `.c` file, first include the corresponding `.h` file, followed by a blank line. 
 Then, include anything from the standard C library that is needed, followed by a blank line.
 Then, include any other header files from YASL that are needed, followed by a blank line.
@@ -21,14 +21,21 @@ For example, the following is the includes from `list_methods.c`:
 #include "yasl_state.h"
 ```
 
-## integral and floating point values in YASL
+## Integral and Floating Point Values in YASL
 Whenever a floating point or integral type is used that represents a int or float within the YASL language, `yasl_float` or `yasl_int` should be used to represent it.
 
 For example:
 `yasl_int val = YASL_GETINT(obj)`, rather than `int64_t val = YASL_GETINT(obj)`.
 
-## typedefs
+## `typedef`s
 Do not add any new typedefs. You may use any existing typedefs if needed.
 
-## naming
+## Naming
 Struct names should be in upper camel case (e.g. `RefCount`). Variable names should be lower case with no separator or lower snake case (e.g. `refcount` or `ref_count`). Try to match the style used in the particular file. Functions should be lower snake case (e.g. `vm_pop`). There are also other conventions for naming functions; e.g. all functions that operate on the VM start with `vm_`. This last convention must _absolutely_ be followed.
+
+## Brace Placement
+Opening brace is always at the end of the the line. Closing brace is on a line of its own, unless the next piece of code continues 
+the statement (e.g. `if`-`else` or `do`-`while`).
+
+## Placement of Asterisks
+Right-align your `*` for pointers, e.g. do `char *s`, _not_ `char* s`.
