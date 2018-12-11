@@ -39,3 +39,29 @@ the statement (e.g. `if`-`else` or `do`-`while`).
 
 ## Placement of Asterisks
 Right-align your `*` for pointers, e.g. do `char *s`, _not_ `char* s`.
+
+## Macros & Enums
+Macro names should be in ALL CAPS, unless the macro is function-like, in which case it may be named as though it were a function.
+
+Macros containing multiple statements must be enclosed in a `do`-`while` block:
+
+```
+#define macrofun(a, b, c)                       \
+        do {                                    \
+                if ((a) == 5)                     \
+                        do_this((b), (c));          \
+        } while (0)
+```
+
+Macros that evaluate to expressions should be enclosed in parentheses. Macro arguments should be enclosed in parentheses.
+
+Things to avoid in macros:
+
+1. macros that affect control flow, e.g. including a return statement in a macro.
+2. macros that depend on having a local variable with a special name, e.g. `#define FOO(val) bar(index, val)` is bad. You probably want
+`#define FOO(index, val) bar(index, val)` instead.
+
+Enums are preferred to macros when definining many related constants. Enums should be named in ALL CAPS. Many exisiting enums use a prefix to denote what they should be used for, for example:
+- enums starting with `T_` are for token types, e.g. `T_PLUS` is the token for `+`.
+- enums starting with `L_` are for lexer modes, e.g. `L_NORMAL` is the default lexer mode.
+- enums starting with `N_` are for AST node types, e.g. `N_IF` is the AST node for `if`-statements.
