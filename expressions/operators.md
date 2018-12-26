@@ -43,7 +43,7 @@ All logical operators can be used with any value, treating all falsey values as 
 The length operator **len** is defined for _str_ (returning the length), _list_ (returning the length) and _table_ (returning the number of elements).
 
 ## Concatenation Operator
-The concatenation operator **~** is defined for _str_ operands, returning the result of concatenating the two strings, and _list_ operands, returning the result of concatenating the two lists.
+The concatenation operator **~** concatenates its two operands, turning each to a string first if it is not already a string.
 
 ## Ternary Operator
 The ternary operator takes 3 arguments of any type, and returns the second if the first is truthy, otherwise it returns the third.
