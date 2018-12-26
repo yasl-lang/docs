@@ -13,7 +13,6 @@ YASL reserves the following keywords, which may not be used as identifiers:
 * for
 * if
 * inf
-* let
 * nan
 * return
 * true
@@ -52,9 +51,6 @@ Literal boolean `false`.
 
 # inf
 Literal infinity.
-
-# let
-`let` is used in variable declarations.
 
 # nan
 Literal NaN.
