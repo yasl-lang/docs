@@ -38,13 +38,13 @@ while n > 0 {
 ## Numeric For Loops
 Numeric for loops take the following form:
 
-`"for" ["let" ID "="] expr ";" expr ";" expr "{" { stmt } "}"`.
+`"for" [ID ":="] expr ";" expr ";" expr "{" { stmt } "}"`.
 
 The first expression (or `let` statement) is executed once before the loop begins. The second expr is the condition to determine when to end the loop. The final expression is evaluated after every iteration of the loop. Note that for loops introduce their own scope, which includes the expression evaluated before starting the loop.
 
 example:
 ```
-for let i = 0; i < @ls; i += 1 {
+for i := 0; i < len ls; i += 1 {
     echo ls[i]
 }
 ```
@@ -52,13 +52,13 @@ for let i = 0; i < @ls; i += 1 {
 ## Iterative For Loops
 Iterative for loops take the following form:
 
-`"for" ["let"] ID "<-" expr "{" { stmt } "}"`.
+`"for" ID "<-" expr "{" { stmt } "}"`.
 
-The expression can be any valid expression, although it is a runtime error if it does not evaluate to a list or table. Like numeric for loops, iterative for loops introduce their own scope, so the iteration variable will not continue to exist after the loop, if it was declared at the start of the loop.
+The expression can be any valid expression, although it is a runtime error if it does not evaluate to a list, table or string. Like numeric for loops, iterative for loops introduce their own scope. The iteration variable existed only inside the body of the for loop, and will not alter a variable of the same name from an outer scope.
 
 example:
 ```
-for let x <- ls {
+for x <- ls {
      echo x
 }
 ```
