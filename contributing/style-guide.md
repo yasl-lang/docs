@@ -71,3 +71,5 @@ Enums are preferred to macros when definining many related constants. Enums shou
 - enums starting with `T_` are for token types, e.g. `T_PLUS` is the token for `+`.
 - enums starting with `L_` are for lexer modes, e.g. `L_NORMAL` is the default lexer mode.
 - enums starting with `N_` are for AST node types, e.g. `N_IF` is the AST node for `if`-statements.
+
+New enums should follow this style. The one exception is the enum for opcodes, which uses no prefix currently.
