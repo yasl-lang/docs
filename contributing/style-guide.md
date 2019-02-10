@@ -43,6 +43,9 @@ Indent with _tabs_. A tab is _8_ spaces.
 ## Placement of Asterisks
 Right-align your `*` for pointers, e.g. do `char *s`, _not_ `char* s`. In casts, leave a space between the type and the asterisk(s), as in `(char *)x` rather than `(char*)x`. If there are multiple asterisks, only a space between the type and the first is needed: `(char **)x`.
 
+## Switch Statements
+A `switch` and the matching `case`s should be indented the same amount.
+
 ## Macros & Enums
 Macro names should be in ALL CAPS, unless the macro is function-like, in which case it may be named as though it were a function.
 
