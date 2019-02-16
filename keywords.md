@@ -50,10 +50,10 @@ Literal boolean `false`.
 `if` is used in `if` statements, or in list and table comprehensions to introduce a condition to filter the list with.
 
 # inf
-Literal infinity.
+Literal infinity. (DEPRECATED, use `math.inf` instead.)
 
 # nan
-Literal NaN.
+Literal NaN. (DEPRECATED, use `math.nan` instead.)
 
 # return
 `return` is used in function declarations to return a value.
