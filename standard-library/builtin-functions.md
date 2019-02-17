@@ -11,12 +11,14 @@ This notation can be used for all functions listed below.
 |------------|-----------|-------------|
 | toint      | self      | converts self to an int value, truncating if necessary |
 | tostr      | self      | converts self to a str value |
+| tofloat    | self      | return self |
 
 ## Int Functions
 
 | Name       | Arguments | Description |
 |------------|-----------|-------------|
 | tofloat    | self      | converts self to an float value, rounding to nearest float if necessary if necessary |
+| toint      | self      | return self |
 | tostr      | self      | converts self to a str value |
 
 ## Bool Functions
