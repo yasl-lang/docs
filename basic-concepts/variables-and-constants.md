@@ -3,7 +3,7 @@
 ## Variables
 Variables are places to store values. They can be declared with the following syntax:
 
-`let ID "=" expr `,
+`"let" ID "=" expr `,
 
 where `ID` is any valid identifier (`[A-Za-z_$][A-Za-z0-9_$]*` i.e. alphanumerics, underscores, and dollar-signs, and not starting with a number) and `expr` is any valid expression.
 
