@@ -5,6 +5,13 @@ So to call `int.tofloat` on something of type `int`, if `x` was an `int` value, 
 As short-hand for this, you can also type `x->tofloat()`, which is exactly the same as `x.tofloat(x)`. 
 This notation can be used for all functions listed below.
 
+## Undef Functions
+
+
+| Name       | Arguments | Description |
+|------------|-----------|-------------|
+| tostr      | self      | converts self to a str value |
+
 ## Float Functions
 
 | Name       | Arguments | Description |
@@ -26,6 +33,7 @@ This notation can be used for all functions listed below.
 | Name       | Arguments | Description |
 |------------|-----------|-------------|
 | tostr      | self      | converts self to a str value |
+| tobool     | self      | returns self       |
 
 ## Str Functions
 
@@ -39,10 +47,14 @@ This notation can be used for all functions listed below.
 | isspace    | self      | returns true if self consists only of whitespace characters, else false |
 | tobool     | self      | converts self to a boolean value, based on the [Truthines](/docs/control-flow/truthiness) of self |
 | tostr      | self      | returns self |
+| toupper    | self      | returns a new str that is an uppercase version of self |
+| tolower    | self      | returns a new str that is a lowercase version of self |
 | startswith | self, substr | returns true if self starts with substr, else false |
 | endswith   | self, substr | returns true if self ends with substr, else false |
 | replace    | self, substr, replstr | returns a copy of self with all instances of substr replaced with replstr |
 | search     | self, substr | returns the index of the first instance of substr in str, else returns undef |
+| count      | self, substr | returns the number of times substr occurs in self |
+| slice      | self, start, end | returns a new str that is a substring of self, from start to end |
 | split      | self, substr | returns a list formed from splitting self at every instance of substr |
 | ltrim      | self, substr | trims all substr instances from left of self |
 | rtrim      | self, substr | trims all substr instances from right of self |
@@ -58,9 +70,13 @@ This notation can be used for all functions listed below.
 | copy       | self      | returns a copy of self |
 | extend     | self, ls  | extends self by adding all elements of ls to the end of self |
 | pop        | self      | removes last element of self and returns it |
+| tostr      | self      | converts self to a str value |
 | search     | self      | returns the index of the first instance of substr in str, else returns undef |
 | reverse    | self      | reverses self in-place |
 | slice      | self, start, end | makes a new list containing the elements in self from start to end |
+| clear      | self      | removes all values from self |
+| join       | self, delim | joins all elements of self together, using delim to delimite them |
+| sort       | self      | sorts self, alphabetically for list of strings and numerically for list of numbers |
 
 ## Table Functions
 
@@ -70,5 +86,6 @@ This notation can be used for all functions listed below.
 | keys       | self      | returns a list containing all the keys in self |
 | values     | self      | returns a list containing all the values in self |
 | copy       | self      | returns a copy of self |
-
+| tostr      | self      | converts self to a str value |
+| clear      | self      | removes all values from self |
 
