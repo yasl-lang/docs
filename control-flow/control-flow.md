@@ -38,13 +38,13 @@ while n > 0 {
 ## Numeric For Loops
 Numeric for loops take the following form:
 
-`"for" [ID ":="] expr ";" expr ";" expr "{" { stmt } "}"`.
+`"for" ["let" ID "="] expr ";" expr ";" expr "{" { stmt } "}"`.
 
 The first expression (or `let` statement) is executed once before the loop begins. The second expr is the condition to determine when to end the loop. The final expression is evaluated after every iteration of the loop. Note that for loops introduce their own scope, which includes the expression evaluated before starting the loop.
 
 example:
 ```
-for i := 0; i < len ls; i += 1 {
+for let i = 0; i < len ls; i += 1 {
     echo ls[i]
 }
 ```
