@@ -39,6 +39,24 @@ YASL supports the following logical operators:
 
 All logical operators can be used with any value, treating all falsey values as false and all truthy values as true. Logical and and logical or short circuit, and return either the left or right operand depending on [Truthiness](/docs/control-flow/truthiness).
 
+## Comparison Operators
+YASL supports the following comparison operators:
+
+* **\<** less than
+* **\>** greater than
+* **\>=** greater than or equal to
+* **\<=** less than or equal to
+* **==** equals
+* **!=** not equals
+* **===** strict equals
+* **!==** strict not equals
+
+The ordering operators (**\<**, **\>**, **\>=**, **\<==**) are defined for strings and numbers.
+
+The equality operator (**==**) compares by value. It coerces _int_s to _float_s if needed. Otherwise, no coercions are done. `undef == undef` is false.
+
+The strict equality operator compares by identity. For scalar types, it behaves the same as **==**, except it compares `undef === undef` as `true` rather than `false`, and will not coerce between numeric types. For _list_s, _table_s, _str_s, etc, it returns true iff the two objects compared are the object in memory.
+
 ## Length Operator
 The length operator **len** is defined for _str_ (returning the length), _list_ (returning the length) and _table_ (returning the number of elements).
 
