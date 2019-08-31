@@ -15,6 +15,7 @@ An online version of the interpreter, using WASM, is available [here](https://ya
 * Statements
   * [Functions](https://yasl-lang.github.io/docs/statements/functions)
 * Expressions
+  * [Comprehensions](https://yasl-lang.github.io/docs/expressions/comprehensions)
   * [Operators](https://yasl-lang.github.io/docs/expressions/operators)
   * [Operator Precedence Table](https://yasl-lang.github.io/docs/expressions/operator-precedence-table)
 * Control Flow
