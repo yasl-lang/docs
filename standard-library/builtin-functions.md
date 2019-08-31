@@ -88,4 +88,5 @@ This notation can be used for all functions listed below.
 | copy       | self      | returns a copy of self |
 | tostr      | self      | converts self to a str value |
 | clear      | self      | removes all values from self |
+| remove     | self, key | removes the key and its associated value from self. does nothing if key is not present.
 
