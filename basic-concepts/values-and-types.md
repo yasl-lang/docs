@@ -55,7 +55,7 @@ Some example tables (suppose `f` is some function):
 * `{ .x: 0, .y: 0 }` (simple table mapping `.x` and `.y` both to `0`);
 * `{ x: f(x) for x <- [.a, .b, .c] }` (table comprehension; this is the same as `{ .a: f(.a), .b: f(.b), .c: f(.c) }`).
 
-## _fn_
+## fn
 The _fn_ type represents a function. There are both named and anonymous functions in YASL. Functions can be nested arbitrarilty.
 
 Some example functions:
@@ -63,10 +63,10 @@ Some example functions:
 * `const fn f(const a, const b) { return a + b; }` (same as above, but `f` cannot be reassigned, and neither can `a` or `b`);
 * `fn(a, b) { return a + b; }` (anonymous version of the first example).
 
-## _userdata_
+## userdata
 The _userdata_ type represents values that have been implemented through the C API. In the standard library, the `io` library introduces the `file` type, and the `collections` library introduces the `set` type, both of which are represented by User-data internally. User-data memory is managed by YASL, and user-data can have a meta-table that can be used to look up methods on the user-data, and a _tag_ that can be used to differentiate different kinds of user-data.
 
-## _userptr_
+## userptr
 The _userptr_ type is similar to _userdata_, with a few key differences:
 * The memory for a user-pointer is not managed by YASL;
 * User-pointers can't have a meta-table (meaning they cannot have methods);
