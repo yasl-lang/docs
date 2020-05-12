@@ -15,7 +15,7 @@ YASL supports a wide range of operators. A table listing them all, along with th
 * **+** unary plus
 * **-** unary minus
 
-Float division always returns a _float64_. Integer division and modulo are only defined for _int64_ values. All other arithmetic operators return an _int64_ if both operands are _int64_, otherwise it returns a _float64_.
+Float division always returns a _float_. Integer division and modulo are only defined for _int_ values. All other arithmetic operators return an _int_ if both operands are _int_, otherwise it returns a _float_.
 
 ## Bitwise Operators
 YASL supports the following bitwise operators:
@@ -28,7 +28,7 @@ YASL supports the following bitwise operators:
 * **\>\>** bitshift right
 * **^** bitwise negation
 
-All bitwise operators are only defined for _int64_ operands, and return an _int64_.
+All bitwise operators are only defined for _int_ operands, and return an _int_.
 
 ## Logical Operators
 YASL supports the following logical operators:
