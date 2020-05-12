@@ -8,14 +8,19 @@ YASL reserves the following keywords, which may not be used as identifiers:
 * echo
 * else
 * elseif
+* export
 * false
 * fn
 * for
 * if
+* len
+* let
 * return
 * true
 * undef
 * while
+
+Additionally, `header`, `match`, `global`, `enum`, `yield`, `do`, `use`, `no`, `pure`, `consteval`, `constexpr`, `constfold`, `extern`, `in` are reserved for possible future use.
 
 # break 
 `break` exits from a `while` or `for` loop, skipping all remaining iterations.
@@ -47,11 +52,11 @@ Literal boolean `false`.
 # if
 `if` is used in `if` statements, or in list and table comprehensions to introduce a condition to filter the list with.
 
-# inf
-Literal infinity. (DEPRECATED, use `math.inf` instead.)
+# let
+`let` is used for variable declarations.
 
-# nan
-Literal NaN. (DEPRECATED, use `math.nan` instead.)
+# len
+`len` is the length operator.
 
 # return
 `return` is used in function declarations to return a value.
