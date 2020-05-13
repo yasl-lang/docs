@@ -1,4 +1,14 @@
-YASL's IO library has the following functions and types.
+YASL's IO library has the following functions and constants.
+
+## IO constants
+
+| Name | Description |
+|------|-------------|
+| stdin | standard input |
+| stdout | standard output |
+| stderr | standard error |
+
+## IO functions
 
 | Name       | Arguments | Description |
 |------------|-----------|-------------|
