@@ -23,5 +23,6 @@ An online version of the interpreter, using WASM, is available [here](https://ya
   * [Control Flow](https://yasl-lang.github.io/docs/control-flow/control-flow)
 * Standard Library
   * [Built-in Functions](https://yasl-lang.github.io/docs/standard-library/builtin-functions)
+  * [IO Library](https://yasl-lang.github.io/docs/standard-library/io-library)
 * Contributing
   * [Style Guide](https://yasl-lang.github.io/docs/contributing/style-guide)
