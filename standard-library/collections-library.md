@@ -1,3 +1,5 @@
+# Collections Library
+
 YASL's collections library defined the following functions.
 
 ## Collections functions
