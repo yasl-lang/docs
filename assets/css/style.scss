@@ -2,10 +2,16 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 :root {
   --rosewood: #550C18;
   --independance: #3A405A;
+}
+
+body {
+  --font: 'Poppins';
+  font-family: var(--font);
 }
 
 h1, h2, strong, body {
