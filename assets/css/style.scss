@@ -16,13 +16,16 @@ body {
 section {
   width:750px;
   float:center;
-  padding-bottom:50px
+  padding-bottom:50px;
+  margin: auto;
 }  
 
 footer {
   width:750px;
+  text-align: center;
   float:center;
   bottom:50px;
+  margin: auto;
 }
 
 h1, h2, strong, body {
