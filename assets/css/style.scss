@@ -5,9 +5,13 @@
 
 :root {
   --rosewood: #550C18;
+  --independance: #3A405A;
 }
 
 h1, h2, strong, body {
   color: var(--rosewood);
 }
 
+a {
+  color: var(--independance); 
+}
