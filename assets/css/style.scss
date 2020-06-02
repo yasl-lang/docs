@@ -13,5 +13,13 @@ h1, h2, strong, body {
 }
 
 a {
+  color: pink;  
+}
+
+a:visited {
   color: var(--independance); 
+}
+
+a:hover {
+ font-weight: bold; 
 }
