@@ -48,3 +48,11 @@ code {
   font-family: 'Ubuntu Mono', monospace;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.15em;
+    border: 0.15em solid var(--rosewood);
+}
