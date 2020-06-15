@@ -65,6 +65,7 @@ Operators for non-numeric types are also included here.
 
 | Operator | Operands | Description |
 |----------|----------|-------------|
+| len      |          | self        | returns the number of characters in self |
 | []       | self, index | returns the substring of self of length 1 at index |
 | [:]      | self, start, end | returns the substring of self from start (inclusive) to end (exclusive) |
 
@@ -85,6 +86,7 @@ Operators for non-numeric types are also included here.
 
 | Operator | Operands | Description |
 |----------|----------|-------------|
+| len      | self     | returns the number of items in self |
 | []       | self, index | returns the value of self at index |
 | []       | self, index, val | updates the value of self at index to val |
 | [:]      | self, start, end | returns a new list based on self from start (inclusive) to end (exclusive) |
@@ -103,5 +105,7 @@ Operators for non-numeric types are also included here.
 
 | Operator | Operands | Description |
 |----------|----------|-------------|
+| len      | self     | returns the number of key-value pairs in self |
+| \|       | left, right | returns the union of left and right based on keys, taking the value from right if any keys overlap |
 | []       | self, index | returns the value of self at index |
 | []       | self, index, val | updates the value of self at index to val |
