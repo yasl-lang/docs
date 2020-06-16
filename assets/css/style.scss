@@ -44,6 +44,14 @@ a:hover {
   font-weight: bold; 
 }
 
+.highlight {
+   color: white;
+  background-color: var(--rosewood);  
+  border-radius: 0.2em;
+  border: 0.2em;
+  padding-left: 0.1em;
+}
+
 code {
   font-family: 'Ubuntu Mono', monospace;
 }
