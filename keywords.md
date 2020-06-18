@@ -21,7 +21,7 @@ YASL reserves the following keywords, which may not be used as identifiers:
 * undef
 * while
 
-Additionally, the keywords `header`, `match`, `global`, `enum`, `yield`, `do`, `use`, `no`, `pure`, `consteval`, `constexpr`, `constfold`, `extern`, and `in` are reserved for possible future use and may not be used as identifiers.
+Additionally, the keywords `header`, `match`, `global`, `enum`, `yield`, `do`, `use`, `no`, `pure`, `consteval`, `constexpr`, `constfold`, `extern`, `struct`, `pragma`, `ifdef`, `elseifdef`, and `in` are reserved for possible future use and may not be used as identifiers.
 
 # assert
 An assert statement will check that the given expression is truthy. If it is, program execution proceeds as normal. If not, a fatal error happens and program execution is halted.
