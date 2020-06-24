@@ -26,6 +26,7 @@ An online version of the interpreter, using WASM, is available [here](https://ya
   * [IO Library](https://yasl-lang.github.io/docs/standard-library/io-library)
   * [Math Library](https://yasl-lang.github.io/docs/standard-library/math-library)
   * [Collections Library](https://yasl-lang.github.io/docs/standard-library/collections-library)
+  * [Metatable Library](https://yasl-lang.github.io/docs/standard-library/mt-library)
 * Embedding YASL
   * [Introduction](https://yasl-lang.github.io/docs/c-api/introduction)
 * Contributing
