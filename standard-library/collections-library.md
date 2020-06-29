@@ -33,5 +33,5 @@ YASL's collections library defined the following functions.
 | <= | left, right | Checks _left_ is a subset of _right_. |
 | < | left, right | Checks _left_ is a strict superset of _right_. |
 | >= | left, right | Checks _left_ is a superset of _right_. |
-| == | left, right | Checks _left_ is equal to _right_, based on element-wise comparison. |
+| == | left, right | Checks _left_ is equal to _right_. |
 | != | left, right | Checks _left_ is not equal to _right_. |
