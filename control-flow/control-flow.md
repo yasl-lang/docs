@@ -19,6 +19,41 @@ if x % 15 == 0 {
     echo x
 }
 ```
+## Match Statements
+
+Match statements take the following form:
+
+`"match" expr "{" { pattern "{" { stmt } "}" } "}"`
+
+For example, the first pattern will match either a list of 2 elements or a table with keys `x` and `y`, while the second matches anything.
+
+```
+match p {
+    [ const x, const y ] | { .x: const x, .y: const y, ... } {
+        echo "x: #{x}, y: #{y}"
+    }
+    * {
+        echo "invalid"
+    }
+}
+```
+
+In addition to `list` and `table` pattern shown above, we can also match on literal `undef`, `bool`, `int`, `float`, and `str`s.
+
+For example, we could implement factorial as follows:
+
+```
+fn fact(n) {
+    match n {
+        0 | 1 {
+            return 1
+        }
+        * {
+            return n * fact(n-1)
+        }
+    }
+}
+```
 
 ## While Loops
 While loops take the following form:
