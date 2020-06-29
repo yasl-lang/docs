@@ -68,7 +68,6 @@ Operators for non-numeric types are also included here.
 | len      | self     | returns the number of characters in _self_. |
 | []       | self, index | returns the substring of _self_ of length 1 at _index_. |
 | [:]      | self, start, end | returns the substring of _self_ from _start_ (inclusive) to _end_ (exclusive). |
-| ~        | left, right | concatenates _left_ and _right_. |
 
 ## List Functions
 
@@ -76,7 +75,6 @@ Operators for non-numeric types are also included here.
 |------------|-----------|-------------|
 | push       | self, val | puts _val_ at end of _self_. |
 | copy       | self      | returns a copy of _self_. |
-| extend     | self, ls  | extends self by adding all elements of _ls_ to the end of _self_. |
 | pop        | self      | removes last element of _self_ and returns it. |
 | tostr      | self      | converts _self_ to a str value. |
 | search     | self      | returns the index of the first instance of substr in _self_, else returns undef. |
