@@ -31,7 +31,7 @@ YASL's collections library defined the following functions.
 | len | set | Cardinality of _set_. |
 | < | left, right | Checks _left_ is a strict subset of _right_. |
 | <= | left, right | Checks _left_ is a subset of _right_. |
-| < | left, right | Checks _left_ is a strict superset of _right_. |
+| > | left, right | Checks _left_ is a strict superset of _right_. |
 | >= | left, right | Checks _left_ is a superset of _right_. |
 | == | left, right | Checks _left_ is equal to _right_. |
 | != | left, right | Checks _left_ is not equal to _right_. |
