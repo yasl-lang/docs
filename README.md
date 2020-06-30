@@ -14,7 +14,8 @@ An online version of the interpreter, using WASM, is available [here](https://ya
   * [Variables and Constants](https://yasl-lang.github.io/docs/basic-concepts/variables-and-constants)
 * Statements
   * [Functions Definition](https://yasl-lang.github.io/docs/statements/functions)
-  * [Assert statement](https://yasl-lang.github.io/docs/statements/assert)
+  * [Assert Statement](https://yasl-lang.github.io/docs/statements/assert)
+  * [Echo Statement](https://yasl-lang.github.io/docs/statements/echo)
 * Expressions
   * [Comprehensions](https://yasl-lang.github.io/docs/expressions/comprehensions)
   * [Operators](https://yasl-lang.github.io/docs/expressions/operators)
