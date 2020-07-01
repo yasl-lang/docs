@@ -2,7 +2,7 @@
 
 Assert statements have the following syntax:
 
-`"assert" expr`.
+`"assert" expr`
 
 An assert statement executes the given expression. If it evaluates to a falsey value, execution of the entire program is halted. Otherwise, execution continues to the next statement.
 
