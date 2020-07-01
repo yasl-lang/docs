@@ -2,7 +2,7 @@
 
 Functions can be declared with the following syntax:
 
-`fn ID "(" { ID "," } [ID] ")" "{" { stmt } "}"`
+`"const"? "fn" ID "(" ("const"? ID),* ")" "{" stmt* "}"`
 
 For example, the following function will add two numbers:
 
