@@ -5,6 +5,7 @@
   - Terminals are specified with double-quotes: "example".
   - An asterisk [*] means the previous expression is repeated 0 or more times: "0"*
   - A comma followed by an asterisk [,*] means the previous expression is repeated 0 or more times, separated by a comma: ID,*
+  - A comma followed by a plus sign [,+] means the previous expression is repeated 1 or more times, seperated by a comma: ID,+
   - A postfix question mark [?] means the previous expression is optional: "const"?
   - Parentheses [(...)] may be used to group expressions: ("const"? ID),*
   - A pipe [|] represents alternatives: "let" | "const"
@@ -19,7 +20,7 @@
 program = stmt*;
 
 (* Statements *)
-stmt = expr_stmt | if_stmt | while_stmt | for_stmt | assert_stmt | echo_stmt | match_stmt | export_stmt | let_stmt | const_stmt | return_stmt | "break" | "continue";
+stmt = expr_stmt | if_stmt | while_stmt | for_stmt | assert_stmt | echo_stmt | match_stmt | export_stmt | assn_stmt | let_stmt | const_stmt | return_stmt | "break" | "continue";
 expr_stmt = expr ";";
 block = "{" stmt* "}";
 if_stmt = "if" expr block ("elseif" expr block)* ("else" block)?;
@@ -28,6 +29,8 @@ for_stmt = "for" id "<-" expr block | "for" let_stmt ";" expr ";" expr block;
 assert_stmt = "assert" expr;
 echo_stmt = "echo" expr;
 export_stmt = "export" expr;
+assn_stmt = (("let" "const")? id | expr "." id | expr "[" expr "]"),+ assn_op expr,+;
+assn_op = "**=" | "+=" | "-=" | "*=" | "/=" | "//=" | "%=" | "<<=" | ">>=" | "&=" | "&^=" | "^=" | "|=" | "~=" | "||=" | "&&=" | "??=";
 let_stmt = "let" id "=" expr;
 const_stmt = "const" id "=" expr;
 return_stmt = "return" expr;
