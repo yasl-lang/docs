@@ -17,17 +17,47 @@
 
 
 program = stmt*;
-stmt = expr_stmt | if_stmt | while_stmt | for_stmt | assert_stmt | match_stmt | export_stmt | let_stmt | const_stmt;
+
+(* Statements *)
+stmt = expr_stmt | if_stmt | while_stmt | for_stmt | assert_stmt | echo_stmt | match_stmt | export_stmt | let_stmt | const_stmt | return_stmt | "break" | "continue";
 expr_stmt = expr ";";
-expr = "undef" | bool_expr | int_expr | float_expr | str_expr | list_expr | table_expr | fn_expr;
+block = "{" stmt* "}";
+if_stmt = "if" expr block ("elseif" expr block)* ("else" block)?;
+while_stmt = "while" expr block;
+for_stmt = "for" id "<-" expr block | "for" let_stmt ";" expr ";" expr block;
+assert_stmt = "assert" expr;
+echo_stmt = "echo" expr;
+export_stmt = "export" expr;
+let_stmt = "let" id "=" expr;
+const_stmt = "const" id "=" expr;
+return_stmt = "return" expr;
+match_stmt = "match" expr "{" (pattern block)* "}";
+
+(* Patterns *)
+pattern = alt_pattern ("|" alt_pattern)*;
+alt_pattern = binding_pattern | table_pattern | list_pattern | primitive_pattern | any_pattern;
+binding_pattern = "let" id | "const" id;
+table_pattern = "{" (primitive_pattern ":" pattern),* "}";
+list_pattern = "[" pattern,* "]";
+primitive_pattern = "undef" | bool_expr | int_expr | float_expr | str_pattern - ?interpolated strings?;
+any_pattern = "*";
+
+(* Expressions *)
+expr = "undef" | bool_expr | int_expr | float_expr | str_expr | list_expr | table_expr | fn_expr | op_expr | call_expr | index_expr;
 bool_expr = "true" | "false";
 int_expr = /0x[0-9a-fA-F_]+/ - /0x_+/ | /[0-9][0-9_]*/ | /0b[01_]+/ - /0b_+/;
 float_expr = /[0-9][0-9_]*.[0-9][0-9_]/;
 str_expr = "." id | /`[^`]`/ | ?single quoted strings with escapes? | ?double quoted strings with escapes and interpolation?;
 list_expr = "[" expr,* "]" | "[" expr "for" id "<-" expr ("if" expr)? "]";
 table_expr = "{" (expr ":" expr),* "}" | "{" expr ":" expr "for" id "<-" expr (if expr)? "}";
-fn_expr = "fn" "(" ("const"? id),* ")" "{" (stmt | "return" expr)* "}";
-
-
+fn_expr = "fn" "(" ("const"? id),* ")" "{" stmt* "}";
+op_expr = expr "?" expr ":" | binop_expr | unop_expr;
+binop_expr = expr binop expr;
+binop = "**" | "+" | "-" | "*" | "/" | "//" | "%" | "<<" | ">>" | "&" | "&^" | "^" | "|" | "~" | "<" | "<=" | ">" | ">=" | "==" | "!=" | "===" | "!==" | "||" | "&&" | "??";
+unop_expr = unop expr;
+unop = "len" | "+" | "-" | "!" | "^"
+call_expr = expr "(" expr,* ")" | expr "->" id "(" expr,* ")";
+index_expr = expr "." id | expr "[" expr "]" | expr "[" expr? ":" expr? "]";
+id =  /[A-Za-z_$][A-Za-z0-9_$]*/ - ?keyword?;
 
 ```
