@@ -1,3 +1,5 @@
+# Math Library
+
 YASL's math library has the following functions and constants.
 
 ## Math constants
