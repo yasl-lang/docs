@@ -12,6 +12,7 @@ Operators for non-numeric types are also included here.
 | Name       | Arguments | Description |
 |------------|-----------|-------------|
 | tostr      | self      | converts _self_ to a str value. |
+| tobool     | self      | converts _self_ to a bool value.  |
 
 ## Float Functions
 
@@ -82,6 +83,9 @@ Operators for non-numeric types are also included here.
 | clear      | self      | removes all values from _self_. |
 | join       | self, delim | joins all elements of _self_ together, using _delim_ to delimite them. |
 | sort       | self      | sorts _self_, alphabetically for list of strings and numerically for list of numbers. |
+| spread     | self      | returns all elements of _self_ as a variadic pack. |
+| count      | self, val | returns the number of occurances of _val_ in _self_. Comparisons are done with `==`. |
+| insert     | self, index, val | inserts _val_ into _self_ at _index_. |
 
 | Operator | Operands | Description |
 |----------|----------|-------------|
