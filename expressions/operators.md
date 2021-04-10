@@ -53,9 +53,9 @@ YASL supports the following comparison operators:
 
 The ordering operators (**\<**, **\>**, **\>=**, **\<==**) are defined for strings and numbers.
 
-The equality operator (**==**) compares by value. It coerces _int_s to _float_s if needed. Otherwise, no coercions are done. `undef == undef` is false.
+The equality operator (**==**) compares by value. It coerces _int_ s to _float_ s if needed. Otherwise, no coercions are done. `undef == undef` is false.
 
-The strict equality operator compares by identity. For scalar types, it behaves the same as **==**, except it compares `undef === undef` as `true` rather than `false`, and will not coerce between numeric types. For _list_s, _table_s, _str_s, etc, it returns true iff the two objects compared are the object in memory.
+The strict equality operator compares by identity. For scalar types, it behaves the same as **==**, except it compares `undef === undef` as `true` rather than `false`, and will not coerce between numeric types. For _list_ s, _table_ s, _str_ s, etc, it returns true iff the two objects compared are the object in memory.
 
 ## Length Operator
 The length operator **len** is defined for _str_ (returning the length), _list_ (returning the length) and _table_ (returning the number of elements).
