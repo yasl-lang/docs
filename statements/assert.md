@@ -22,4 +22,4 @@ fn fact(n)
 }
 ```
 
-This will halt if `n < 0`, because of the assert.
+This will exit with an error if `n < 0`, because of the assert.
