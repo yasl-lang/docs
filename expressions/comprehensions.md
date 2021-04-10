@@ -30,4 +30,4 @@ The syntax for table comprehensions is:
 ```
 "{" expr ":" expr "for" id "<-" expr ("if" expr)? "}"
 ```
-
+Table comprehensions can use the same mapping and filtering as a list comprehension.
