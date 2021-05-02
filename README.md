@@ -24,6 +24,7 @@ An online version of the interpreter, using WASM, is available [here](https://ya
 * Control Flow
   * [Truthiness](https://yasl-lang.github.io/docs/control-flow/truthiness)
   * [Control Flow](https://yasl-lang.github.io/docs/control-flow/control-flow)
+* [Variadics](https://yasl-lang.github.io/docs/variadics)
 * Standard Library
   * [Built-in Functions](https://yasl-lang.github.io/docs/standard-library/builtin-functions)
   * [IO Library](https://yasl-lang.github.io/docs/standard-library/io-library)
