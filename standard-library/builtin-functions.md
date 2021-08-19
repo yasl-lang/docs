@@ -86,6 +86,7 @@ Operators for non-numeric types are also included here.
 | spread     | self      | returns all elements of _self_ as a variadic pack. |
 | count      | self, val | returns the number of occurances of _val_ in _self_. Comparisons are done with `==`. |
 | insert     | self, index, val | inserts _val_ into _self_ at _index_. |
+| remove     | self, val | removes the first occurance of _val_ from _self_. Comparisons are done with `==`. |
 
 | Operator | Operands | Description |
 |----------|----------|-------------|
