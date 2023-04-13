@@ -9,11 +9,13 @@ YASL reserves the following keywords, which may not be used as identifiers:
 * echo
 * else
 * elseif
+* elseifdef
 * export
 * false
 * fn
 * for
 * if
+* ifdef
 * len
 * let
 * match
@@ -22,7 +24,7 @@ YASL reserves the following keywords, which may not be used as identifiers:
 * undef
 * while
 
-Additionally, the keywords `header`, `global`, `enum`, `yield`, `do`, `use`, `no`, `pure`, `consteval`, `constexpr`, `constfold`, `extern`, `struct`, `pragma`, `ifdef`, `elseifdef`, and `in` are reserved for possible future use and may not be used as identifiers.
+Additionally, the keywords `header`, `global`, `enum`, `yield`, `do`, `use`, `no`, `pure`, `consteval`, `constexpr`, `constfold`, `extern`, `struct`, `pragma`, and `in` are reserved for possible future use and may not be used as identifiers.
 
 # assert
 An [assert statement](https://yasl-lang.github.io/docs/statements/assert) will check that the given expression is truthy. If it is, program execution proceeds as normal. If not, a fatal error happens and program execution is halted.
