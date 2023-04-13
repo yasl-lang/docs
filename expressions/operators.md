@@ -37,7 +37,7 @@ YASL supports the following logical operators:
 * **&&** logical and
 * **!** logical negation
 
-All logical operators can be used with any value, treating all falsey values as false and all truthy values as true. Logical and and logical or short circuit, and return either the left or right operand depending on [Truthiness](/docs/control-flow/truthiness).
+All logical operators can be used with any value, treating all falsey values as false and all truthy values as true. **Logical and** and **logical or** short circuit, and return either the left or right operand depending on [Truthiness](/docs/control-flow/truthiness).
 
 ## Comparison Operators
 YASL supports the following comparison operators:
@@ -51,7 +51,7 @@ YASL supports the following comparison operators:
 * **===** strict equals
 * **!==** strict not equals
 
-The ordering operators (**\<**, **\>**, **\>=**, **\<==**) are defined for strings and numbers.
+The ordering operators (**\<**, **\>**, **\>=**, **\<=**) are defined for strings and numbers.
 
 The equality operator (**==**) compares by value. It coerces _int_ s to _float_ s if needed. Otherwise, no coercions are done. `undef == undef` is false.
 
