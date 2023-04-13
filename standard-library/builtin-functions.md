@@ -39,6 +39,14 @@ Operators for non-numeric types are also included here.
 | tostr      | self      | converts _self_ to a str value. |
 | tobool     | self      | returns _self_. |
 
+| Operator | Operands | Description |
+|----------|----------|-------------|
+| \|       | left, right | Logical or (not short-circuiting). |
+| &        | left, right | Logical and (not short-circuiting). |
+| ^        | left, right | Logical xor (not short-circuiting). |
+| &^       | left, right | Logical and-not (not short-circuiting). |
+| ^        | b           | Logical not. |
+
 ## Str Functions
 
 | Name       | Arguments | Description |
